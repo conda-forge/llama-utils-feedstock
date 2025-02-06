@@ -1,6 +1,6 @@
-{% set python_min = '3.12' %}
+{% set python_min = "3.12" %}
 {% set name = "llama-utils" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://github.com/Serapieum-of-alex/llama-utils/archive/{{ version }}.tar.gz
-  sha256: 4dce62a62584cb0391a6d16b9fba8a912dfe5ab5de546847ac6f6db94f89a79e
+  sha256: ba303344ce8e90d944667ae421cc1f6be0a4844e879e34cffc4e6708b61ae158
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation 
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
