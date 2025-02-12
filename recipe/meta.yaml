@@ -1,4 +1,4 @@
-{% set python_min = '3.12' %}
+{% set python_min = "3.12" %}
 {% set name = "llama-utils" %}
 {% set version = "0.3.0" %}
 
@@ -13,7 +13,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation 
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
